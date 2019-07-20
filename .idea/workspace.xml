@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="746c2d62-356c-4643-80ae-a243ee4817f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/NodeClassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VisualizeResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/VisualizeResult.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/result_node_embedding_StreamNode_22166.embedding" beforeDir="false" />
-    </list>
+    <list default="true" id="746c2d62-356c-4643-80ae-a243ee4817f1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="208">
+              <caret line="100" column="54" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="54" />
               <folding>
                 <element signature="e#301#313#0" expanded="true" />
               </folding>
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VisualizeResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+            <state relative-caret-position="162">
+              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -295,18 +290,18 @@
       <updated>1563607827847</updated>
       <workItem from="1563607857374" duration="3474000" />
       <workItem from="1563616033477" duration="11276000" />
-      <workItem from="1563628398486" duration="5958000" />
+      <workItem from="1563628398486" duration="6214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20708000" />
+    <option name="totallyTimeSpent" value="20964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13986014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13986014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +320,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32937062" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.5048951" />
       <window_info anchor="right" x="0" y="0" width="322" height="678" id="Documentation" order="4" side_tool="true" weight="0.32867134" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -416,8 +411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NodeClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="208">
+          <caret line="100" column="54" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="54" />
           <folding>
             <element signature="e#301#313#0" expanded="true" />
           </folding>
@@ -426,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VisualizeResult.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+        <state relative-caret-position="162">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
         </state>
       </provider>
     </entry>
