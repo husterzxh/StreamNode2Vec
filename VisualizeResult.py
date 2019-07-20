@@ -40,7 +40,7 @@ def visualize_result():
         list_data_label_id.append(dict_label_id[item_data_label])
 
     # 读取embedding结果数据
-    file_name_embedding = r'./data/result_node_embedding_StreamNode_22166.embedding'
+    file_name_embedding = r'./data/0.5/all_node_embedding_2_0.5.embedding'
     with open(file_name_embedding, 'r', encoding='utf-8') as fp1:
         list_embedding = fp1.read().split('\n')
     del list_embedding[-1]

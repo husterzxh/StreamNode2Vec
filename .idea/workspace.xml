@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746c2d62-356c-4643-80ae-a243ee4817f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NodeClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/NodeClassification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StreamNode2Vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/StreamNode2Vec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VisualizeResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/VisualizeResult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/result_node_embedding_StreamNode_22166.embedding" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,37 +21,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StreamNode2Vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="5850">
               <caret line="200" column="67" selection-start-line="199" selection-start-column="4" selection-end-line="200" selection-end-column="67" />
               <folding>
                 <element signature="e#345#356#0" expanded="true" />
-                <element signature="e#571#1788#0" />
-                <element signature="e#2402#2479#0" />
                 <element signature="e#3987#4301#0" />
-                <element signature="e#4253#8096#0" />
-                <element signature="e#5046#6045#0" />
-                <element signature="e#5303#5939#0" />
-                <element signature="e#5489#5880#0" />
-                <element signature="e#6072#6439#0" />
-                <element signature="e#7285#8009#0" />
-                <element signature="e#8781#8941#0" />
-                <element signature="e#9174#9334#0" />
-                <element signature="e#9574#9734#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NodeClassification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+              <folding>
+                <element signature="e#301#313#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NodeClassification.py">
+        <entry file="file://$PROJECT_DIR$/VisualizeResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1948">
-              <caret line="121" column="59" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="59" />
-              <folding>
-                <element signature="e#301#313#0" expanded="true" />
-                <element signature="e#553#961#0" />
-                <element signature="e#2937#3315#0" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -66,7 +64,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>item_node</find>
+      <find>train</find>
     </findStrings>
+    <replaceStrings>
+      <replace>test</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,11 +78,11 @@
       <list>
         <option value="$PROJECT_DIR$/StreamNode2Vec/GenerateRemoveNode.py" />
         <option value="$PROJECT_DIR$/StreamNode2Vec/StreamNode2Vec.py" />
-        <option value="$PROJECT_DIR$/VisualizeResult.py" />
         <option value="$PROJECT_DIR$/CreateLabels.py" />
         <option value="$PROJECT_DIR$/GenerateRemoveNode.py" />
         <option value="$PROJECT_DIR$/StreamNode2Vec.py" />
         <option value="$PROJECT_DIR$/NodeClassification.py" />
+        <option value="$PROJECT_DIR$/VisualizeResult.py" />
       </list>
     </option>
   </component>
@@ -95,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,11 +110,16 @@
               <item name="StreamNode2Vec" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StreamNode2Vec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StreamNode2Vec" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="0.1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,11 +146,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.StreamNode2Vec">
+  <component name="RunManager" selected="Python.VisualizeResult">
     <configuration name="GenerateRemoveNode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StreamNode2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -203,6 +214,9 @@
       <module name="StreamNode2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -261,10 +275,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.VisualizeResult" />
+        <item itemvalue="Python.NodeClassification" />
         <item itemvalue="Python.StreamNode2Vec" />
         <item itemvalue="Python.GenerateRemoveNode (1)" />
-        <item itemvalue="Python.NodeClassification" />
-        <item itemvalue="Python.VisualizeResult" />
         <item itemvalue="Python.GenerateRemoveNode" />
       </list>
     </recent_temporary>
@@ -280,18 +294,19 @@
       <option name="presentableId" value="Default" />
       <updated>1563607827847</updated>
       <workItem from="1563607857374" duration="3474000" />
-      <workItem from="1563616033477" duration="10499000" />
+      <workItem from="1563616033477" duration="11276000" />
+      <workItem from="1563628398486" duration="5958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13973000" />
+    <option name="totallyTimeSpent" value="20708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25314686" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13986014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,7 +321,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.27700832" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.6204986" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VisualizeResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="42" column="84" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1389958170/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -383,35 +391,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StreamNode2Vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="5850">
           <caret line="200" column="67" selection-start-line="199" selection-start-column="4" selection-end-line="200" selection-end-column="67" />
           <folding>
             <element signature="e#345#356#0" expanded="true" />
-            <element signature="e#571#1788#0" />
-            <element signature="e#2402#2479#0" />
             <element signature="e#3987#4301#0" />
-            <element signature="e#4253#8096#0" />
-            <element signature="e#5046#6045#0" />
-            <element signature="e#5303#5939#0" />
-            <element signature="e#5489#5880#0" />
-            <element signature="e#6072#6439#0" />
-            <element signature="e#7285#8009#0" />
-            <element signature="e#8781#8941#0" />
-            <element signature="e#9174#9334#0" />
-            <element signature="e#9574#9734#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python/Lib/site-packages/sklearn/preprocessing/label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="818" column="8" selection-start-line="818" selection-start-column="8" selection-end-line="818" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python/Lib/site-packages/sklearn/multiclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="183" column="8" selection-start-line="183" selection-start-column="8" selection-end-line="183" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NodeClassification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1948">
-          <caret line="121" column="59" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="59" />
+        <state relative-caret-position="478">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#301#313#0" expanded="true" />
-            <element signature="e#553#961#0" />
-            <element signature="e#2937#3315#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VisualizeResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
         </state>
       </provider>
     </entry>
