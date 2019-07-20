@@ -22,6 +22,10 @@ from gensim.models import Word2Vec
 
 # 最终每个节点的embedding结果，key是新编号
 dict_node_embedding = dict()
+# 训练节点（初始节点）的embedding
+dict_train_node_embedding = dict()
+# 测试节点（动态节点）的embedding
+dict_test_node_embedding = dict()
 
 # 读取数据
 def read_data():
@@ -56,7 +60,7 @@ def read_data():
 
 
 # 动态embedding
-def streaming_network_embedding(matrix_adjacency, int_all_round=2, int_embedding_dimension=90, int_walk_length=10, int_window_size=7):
+def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, int_embedding_dimension=90, int_walk_length=10, int_window_size=7):
     # 完整的图（所有节点和边都在）
     matrix_adjacency_delete_index = matrix_adjacency[:-1, :]
     # 为每个节点设定一个激活阈值
@@ -67,7 +71,7 @@ def streaming_network_embedding(matrix_adjacency, int_all_round=2, int_embedding
     # 在初始邻接矩阵中移除即将到来的节点，得到t0时刻的邻接矩阵
     # 对t0时刻的邻接矩阵进行node2vec，得到t0时刻各个节点的embedding
     # 读取事先生成的移除的节点
-    file_remove_node = r'./data/remove_node_2166.txt'
+    file_remove_node = './data/' + str(float_ratio) + '/remove_node_' + str(float_rate) + '.txt'
     with open(file_remove_node, 'r', encoding='utf-8') as fp:
         read_content = fp.read()
         list_remove_nodes = read_content.split('\n')
@@ -187,7 +191,9 @@ def streaming_network_embedding(matrix_adjacency, int_all_round=2, int_embedding
 
 if __name__ == '__main__':
     matrix_adjacency = read_data()
-    start_time = time.clock()
-    streaming_network_embedding(matrix_adjacency)
-    end_time = time.clock()
-    print('运行时间：{}'.format(end_time-start_time))
+    for i in range(1, 10):
+        float_ratio = round(i * 0.1, 1)
+        start_time = time.clock()
+        streaming_network_embedding(matrix_adjacency, float_ratio)
+        end_time = time.clock()
+        print('运行时间：{}'.format(end_time-start_time))
