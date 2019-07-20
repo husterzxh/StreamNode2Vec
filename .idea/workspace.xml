@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746c2d62-356c-4643-80ae-a243ee4817f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GenerateRemoveNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateRemoveNode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeClassification.py" beforeDir="false" afterPath="$PROJECT_DIR$/NodeClassification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StreamNode2Vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/StreamNode2Vec.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/classification_f1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/remove_node_0.9.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,20 +16,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StreamNode2Vec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="357">
+              <caret line="200" column="67" selection-start-line="199" selection-start-column="4" selection-end-line="200" selection-end-column="67" />
               <folding>
                 <element signature="e#345#356#0" expanded="true" />
                 <element signature="e#571#1788#0" />
                 <element signature="e#2402#2479#0" />
-                <element signature="e#3619#3850#0" />
+                <element signature="e#3987#4301#0" />
+                <element signature="e#4253#8096#0" />
+                <element signature="e#5046#6045#0" />
                 <element signature="e#5303#5939#0" />
                 <element signature="e#5489#5880#0" />
                 <element signature="e#6072#6439#0" />
-                <element signature="e#6699#7214#0" />
+                <element signature="e#7285#8009#0" />
+                <element signature="e#8781#8941#0" />
+                <element signature="e#9174#9334#0" />
+                <element signature="e#9574#9734#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NodeClassification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1948">
+              <caret line="121" column="59" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="59" />
+              <folding>
+                <element signature="e#301#313#0" expanded="true" />
+                <element signature="e#553#961#0" />
+                <element signature="e#2937#3315#0" />
               </folding>
             </state>
           </provider>
@@ -69,9 +78,9 @@
         <option value="$PROJECT_DIR$/StreamNode2Vec/StreamNode2Vec.py" />
         <option value="$PROJECT_DIR$/VisualizeResult.py" />
         <option value="$PROJECT_DIR$/CreateLabels.py" />
-        <option value="$PROJECT_DIR$/NodeClassification.py" />
         <option value="$PROJECT_DIR$/GenerateRemoveNode.py" />
         <option value="$PROJECT_DIR$/StreamNode2Vec.py" />
+        <option value="$PROJECT_DIR$/NodeClassification.py" />
       </list>
     </option>
   </component>
@@ -97,12 +106,6 @@
               <item name="StreamNode2Vec" type="b2602c69:ProjectViewProjectNode" />
               <item name="StreamNode2Vec" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StreamNode2Vec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StreamNode2Vec" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="0.1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -135,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GenerateRemoveNode (1)">
+  <component name="RunManager" selected="Python.StreamNode2Vec">
     <configuration name="GenerateRemoveNode (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="StreamNode2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,10 +261,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.StreamNode2Vec" />
         <item itemvalue="Python.GenerateRemoveNode (1)" />
         <item itemvalue="Python.NodeClassification" />
         <item itemvalue="Python.VisualizeResult" />
-        <item itemvalue="Python.StreamNode2Vec" />
         <item itemvalue="Python.GenerateRemoveNode" />
       </list>
     </recent_temporary>
@@ -277,12 +280,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563607827847</updated>
       <workItem from="1563607857374" duration="3474000" />
-      <workItem from="1563616033477" duration="7202000" />
+      <workItem from="1563616033477" duration="10499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10676000" />
+    <option name="totallyTimeSpent" value="13973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -303,7 +306,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.58448756" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.27700832" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -361,17 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeClassification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-          <folding>
-            <element signature="e#301#313#0" expanded="true" />
-            <element signature="e#553#961#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1389958170/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -391,17 +383,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StreamNode2Vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="357">
+          <caret line="200" column="67" selection-start-line="199" selection-start-column="4" selection-end-line="200" selection-end-column="67" />
           <folding>
             <element signature="e#345#356#0" expanded="true" />
             <element signature="e#571#1788#0" />
             <element signature="e#2402#2479#0" />
-            <element signature="e#3619#3850#0" />
+            <element signature="e#3987#4301#0" />
+            <element signature="e#4253#8096#0" />
+            <element signature="e#5046#6045#0" />
             <element signature="e#5303#5939#0" />
             <element signature="e#5489#5880#0" />
             <element signature="e#6072#6439#0" />
-            <element signature="e#6699#7214#0" />
+            <element signature="e#7285#8009#0" />
+            <element signature="e#8781#8941#0" />
+            <element signature="e#9174#9334#0" />
+            <element signature="e#9574#9734#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1948">
+          <caret line="121" column="59" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="59" />
+          <folding>
+            <element signature="e#301#313#0" expanded="true" />
+            <element signature="e#553#961#0" />
+            <element signature="e#2937#3315#0" />
           </folding>
         </state>
       </provider>

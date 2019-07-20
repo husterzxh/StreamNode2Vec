@@ -98,6 +98,15 @@ def evaluate_embeddings(embeddings):
     return str_result
 
 if __name__ == '__main__':
+    for i in range(1, 10):
+        float_ratio = round(i * 0.1, 1)
+        file_train_embedding_result = r'./data/' + str(float_ratio) + '/train_node_embedding_' + str(int_all_round) \
+                                      + '_' + str(float_ratio) + '.embedding'
+        file_test_embedding_result = r'./data/' + str(float_ratio) + '/test_node_embedding_' + str(int_all_round) \
+                                     + '_' + str(float_ratio) + '.embedding'
+
+
+
     # 读取embedding结果数据
     file_name_embedding = r'./data/result_node_embedding_StreamNode_22166.embedding'
     with open(file_name_embedding, 'r', encoding='utf-8') as fp1:

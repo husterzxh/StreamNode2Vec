@@ -71,7 +71,7 @@ def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, 
     # 在初始邻接矩阵中移除即将到来的节点，得到t0时刻的邻接矩阵
     # 对t0时刻的邻接矩阵进行node2vec，得到t0时刻各个节点的embedding
     # 读取事先生成的移除的节点
-    file_remove_node = './data/' + str(float_ratio) + '/remove_node_' + str(float_rate) + '.txt'
+    file_remove_node = './data/' + str(float_ratio) + '/remove_node_' + str(float_ratio) + '.txt'
     with open(file_remove_node, 'r', encoding='utf-8') as fp:
         read_content = fp.read()
         list_remove_nodes = read_content.split('\n')
@@ -101,6 +101,7 @@ def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, 
         # word是str类型，直接从matrix_adjacency_t0取元素是float64类型
         node_index = int(matrix_adjacency_t0[-1, int(word)])
         dict_node_embedding[node_index] = ' '.join(repr(val) for val in row)
+        dict_train_node_embedding[node_index] = ' '.join(repr(val) for val in row)
 
 
     # 接下来，之前删除的节点依次到来(t1 t2 t3...时刻)，进行动态embedding
@@ -110,7 +111,7 @@ def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, 
     for item_node in list_remove_nodes_cp:
         # 节点到来后，重新构建邻接矩阵
         list_remove_nodes.remove(item_node)
-        # print('还剩下{}个节点'.format(len(list_remove_nodes)))
+        print('还剩下{}个节点'.format(len(list_remove_nodes)))
         matrix_adjacency_t1 = np.delete(matrix_adjacency, list_remove_nodes, axis=0)
         matrix_adjacency_t1 = np.delete(matrix_adjacency_t1, list_remove_nodes, axis=1)
         matrix_adjacency_t1_delete_index = matrix_adjacency_t1[:-1, :]
@@ -168,6 +169,7 @@ def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, 
             float_all_embedding = float_all_embedding / len(list_all_actived_node)
             list_arrived_node_embedding.append(float_all_embedding)
         dict_node_embedding[item_node] = ' '.join(repr(val) for val in list_arrived_node_embedding)
+        dict_test_node_embedding[item_node] = ' '.join(repr(val) for val in list_arrived_node_embedding)
 
         # 根据论文中的公式得到受影响节点的embedding
         if bool_flag_update:
@@ -181,19 +183,36 @@ def streaming_network_embedding(matrix_adjacency, float_ratio, int_all_round=2, 
                 dict_node_embedding[int(matrix_adjacency_t1[-1, item_all_actived_node])] = ' '.join(repr(val) for val in list_new_embedding)
 
     # 将最终的embedding结果写入文件
-    # file_embedding_result = r'./data/result_node_embedding_StreamNode_' + str(int_all_round) \
-    #                         + str(len(list_remove_nodes_cp)) + '.embedding'
-    # for key, word in dict_node_embedding.items():
-    #     with open(file_embedding_result, 'a', encoding='utf-8') as fp:
-    #         write_content = str(key) + ' ' + str(word) + '\n'
-    #         fp.write(write_content)
+    file_embedding_result = r'./data/' + str(float_ratio) + '/all_node_embedding_' + str(int_all_round) \
+                            + '_' + str(float_ratio) + '.embedding'
+    for key, word in dict_node_embedding.items():
+        with open(file_embedding_result, 'a', encoding='utf-8') as fp:
+            write_content = str(key) + ' ' + str(word) + '\n'
+            fp.write(write_content)
+    # 将训练节点的embedding结果写入文件
+    file_train_embedding_result = r'./data/' + str(float_ratio) + '/train_node_embedding_' + str(int_all_round) \
+                            + '_' + str(float_ratio) + '.embedding'
+    for key, word in dict_train_node_embedding.items():
+        with open(file_train_embedding_result, 'a', encoding='utf-8') as fp:
+            write_content = str(key) + ' ' + str(word) + '\n'
+            fp.write(write_content)
+    # 将测试节点的embedding结果写入文件
+    file_test_embedding_result = r'./data/' + str(float_ratio) + '/test_node_embedding_' + str(int_all_round) \
+                            + '_' + str(float_ratio) + '.embedding'
+    for key, word in dict_test_node_embedding.items():
+        with open(file_test_embedding_result, 'a', encoding='utf-8') as fp:
+            write_content = str(key) + ' ' + str(word) + '\n'
+            fp.write(write_content)
 
 
 if __name__ == '__main__':
     matrix_adjacency = read_data()
     for i in range(1, 10):
+        dict_node_embedding.clear()
+        dict_train_node_embedding.clear()
+        dict_test_node_embedding.clear()
         float_ratio = round(i * 0.1, 1)
-        start_time = time.clock()
+        # start_time = time.clock()
         streaming_network_embedding(matrix_adjacency, float_ratio)
-        end_time = time.clock()
-        print('运行时间：{}'.format(end_time-start_time))
+        # end_time = time.clock()
+        # print('运行时间：{}'.format(end_time-start_time))
